@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.jaats.agrovehicle">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".app.App"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".activity.tankerCategory"></activity>
+        <activity android:name=".activity.SearchPageTractorLocation" />
+        <activity android:name=".activity.JcbCategory" />
+        <activity android:name=".activity.tractorcategory" />
+        <activity android:name=".activity.AddOnTractorType" />
+        <activity android:name=".activity.LanguagePage" />
+        <activity android:name=".LanguagePage" /> <!-- Remove this to remove Fabric -->
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="54c260049943bced1377b0eb132a9b68687ba073" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDU2i2j6Kk3l4q_kVI-8x5zuJYIjkZXMsE" />
+        <!--
+	 Set custom default icon. This is used when no icon is set for incoming notification messages.
+	 See README(https://goo.gl/l4GJaQ) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_logo" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <service android:name=".services.LaTaxiFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".services.LaTaxiFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service android:name=".services.MyFirebaseInstanceService">
+            <intent-filter>
+                <action android:name='com.google.firebase.MESSAGING_EVENT'></action>
+            </intent-filter>
+
+        </service>
+        <activity
+            android:name=".activity.RegistrationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.LandingPageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PickUpLocationActivity"
+            android:label="@string/title_activity_pick_up_location"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.SearchPageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PromotionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FreeRidesActiivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RequestingPageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SettingsPageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ProfileEditActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.TripsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TripDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.HelpPageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ReceiptPageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TripFeedbackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SearchHomeWorkActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.OnTripActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MobileVerificationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+    </application>
+
+</manifest>

@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_landing_estimation_bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="394dp"
+    android:orientation="vertical"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="100dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <FrameLayout
+            android:id="@+id/frame_landing_bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:minHeight="100dp"
+            android:onClick="onLayoutClickLandingPage"
+            app:layout_behavior="@string/bottom_sheet_behavior">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+
+                    android:id="@+id/rv_bottom_sheet_landing_car_types"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="top"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/item_car_type">
+
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <LinearLayout
+
+                    android:id="@+id/ll_landing_bottombar"
+                    android:layout_width="179dp"
+                    android:layout_height="219dp"
+                    android:layout_gravity="top"
+                    android:onClick="onLayoutClickLandingPage"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:weightSum="4">
+
+                        <LinearLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="bottom"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:onClick="onLaGoCarClick"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                                <ImageView
+                                    android:id="@+id/iv_car_one"
+                                    android:layout_width="73dp"
+                                    android:layout_height="51dp"
+                                    android:layout_marginTop="5dp"
+                                    android:scaleType="centerInside" />
+
+                                <com.jaats.agrovehicle.widgets.CustomTextView
+                                    android:id="@+id/txt_la_go"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/btn_click_green_dark_rectangle_with_semicircle_edge"
+                                    android:gravity="center"
+                                    android:minHeight="25dp"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="@color/white" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="bottom"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:onClick="onLaXCarClick"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                                <ImageView
+                                    android:id="@+id/iv_car_two"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginTop="10dp"
+                                    android:scaleType="centerInside" />
+
+                                <com.jaats.agrovehicle.widgets.CustomTextView
+                                    android:id="@+id/txt_la_x"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:minHeight="25dp"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="@color/colorPrimary" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="bottom"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:onClick="onCarXlClick"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                                <ImageView
+                                    android:id="@+id/iv_car_three"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginTop="10dp"
+                                    android:scaleType="centerInside" />
+
+                                <com.jaats.agrovehicle.widgets.CustomTextView
+                                    android:id="@+id/txt_la_xl"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:minHeight="25dp"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="@color/colorPrimary" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="bottom"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:onClick="onCarXxlClick"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                                <ImageView
+                                    android:id="@+id/iv_car_four"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginTop="10dp"
+                                    android:scaleType="centerInside" />
+
+                                <com.jaats.agrovehicle.widgets.CustomTextView
+                                    android:id="@+id/txt_la_xll"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:minHeight="25dp"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="@color/colorPrimary" />
+
+                        </LinearLayout>
+
+                </LinearLayout>
+
+</FrameLayout>
+        <LinearLayout
+    android:id="@+id/ll_estimation"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_alignParentBottom="true"
+android:background="#fff"
+android:minHeight="90dp"
+android:orientation="vertical"
+android:visibility="visible"
+android:weightSum="1">
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/dashed_line_landing_page"/>
+
+
+<LinearLayout
+    android:layout_width="250dp"
+    android:layout_height="50dp"
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+    android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/blue"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+                <com.jaats.agrovehicle.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/label_eta"
+                    android:textColor="#EEF5F7"/>
+
+                <com.jaats.agrovehicle.widgets.CustomTextView
+                    android:id="@+id/txt_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="5dp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorAccent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+                <com.jaats.agrovehicle.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/label_max_size"
+
+                    android:textColor="#EEF5F7"/>
+
+                <com.jaats.agrovehicle.widgets.CustomTextView
+                    android:id="@+id/txt_max_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="5dp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+                <com.jaats.agrovehicle.widgets.CustomTextView
+                    android:id="@+id/txt_fare_lable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/label_min_fare"
+
+                    android:textColor="#EEF5F7" />
+
+                <com.jaats.agrovehicle.widgets.CustomTextView
+                    android:id="@+id/txt_fare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/black"/>
+
+                <com.jaats.agrovehicle.widgets.CustomTextView
+                    android:id="@+id/txt_estimated_fare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/black"
+                    android:visibility="gone"/>
+
+        </LinearLayout>
+
+</LinearLayout>
+
+
+
+<com.jaats.agrovehicle.widgets.CustomTextView
+    android:id="@+id/txt_to"
+    android:layout_width="25dp"
+    android:layout_height="25dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/circle_gray"
+    android:gravity="center"
+    android:text="@string/label_to"
+    android:textColor="@color/black"
+    android:visibility="gone"/>
+
+<LinearLayout
+    android:id="@+id/ll_destination_estimated"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_marginTop="15dp"
+    android:gravity="center"
+    android:onClick="onEstimatedDestinationClick"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:visibility="gone">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_destination_trips"/>
+
+        <com.jaats.agrovehicle.widgets.CustomTextView
+            android:id="@+id/txt_estimated_destination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:onClick="onEstimatedDestinationClick"
+            android:text="@string/label_destination"/>
+
+</LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/framclick2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:minHeight="100dp"
+            app:layout_behavior="@string/bottom_sheet_behavior">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+
+                    android:id="@+id/rvRecyclerview2"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_gravity="top"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/addontractor">
+
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+        </LinearLayout>
+
+
+        <com.jaats.agrovehicle.widgets.CustomTextView
+            android:id="@+id/txt_fare_estimate"
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/bg_black_round_edges"
+            android:gravity="center"
+            android:onClick="onFareEstimateClick"
+            android:text="@string/btn_get_fare_estimate"
+            android:textColor="@color/white"
+            android:visibility="visible"/>
+
+
+
+
+
+
+
+
+
+<LinearLayout
+android:id="@+id/ll_landing_progress_bar"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="@color/white"
+android:gravity="center"
+android:minHeight="120dp"
+android:orientation="vertical"
+android:visibility="gone">
+
+<ProgressBar
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:indeterminate="true"
+    android:progressTint="@color/colorPrimary"
+    />
+
+
+</LinearLayout>
+
+
+
+
+</LinearLayout>

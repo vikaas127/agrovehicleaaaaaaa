@@ -1,0 +1,73 @@
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/imgTractorAddonse"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:src="@drawable/tractor2">
+    </ImageView>
+
+
+
+    <TextView
+        android:id="@+id/tractorName2"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        android:layout_marginLeft="120dp"
+        />
+    <TextView
+        android:text="₹"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"
+        />
+    <TextView
+        android:id="@+id/tractorPrise2"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="120dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="30dp"
+        android:text="/Day">
+
+    </TextView>
+
+    <CheckBox android:id="@+id/checkbox_tractor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="340dp"
+        android:layout_marginTop="10dp"
+        android:onClick="onCheckboxClicked"/>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

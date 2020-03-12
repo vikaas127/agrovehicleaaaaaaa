@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonLayout"
+        android:layout_marginBottom="4dp"
+
+        android:background="@color/background_color"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+        <ImageView
+
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="411dp"
+            android:contentDescription="TODO"
+            android:scaleType="centerCrop"
+
+            app:srcCompat="@drawable/splash"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:lineSpacingExtra="10sp"
+            android:text="Choose Your Language"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="32sp"
+            android:textStyle="bold|italic" />
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_gravity="center"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/earth">
+
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/background_color"
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/social_layout"
+        android:orientation="horizontal">
+
+        <Button
+
+          android:onClick="HindiLang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/full_rounded_button"
+
+            android:text="@string/sign_in"
+            android:textColor="@color/white" />
+
+        <Button
+           android:onClick="EnglishLang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/full_rounded_button"
+            android:text="@string/signup"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/social_layout"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+
+
+            android:textColor="@color/blue"
+
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</RelativeLayout>

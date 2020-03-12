@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout android:id="@+id/framclick2"
+    android:layout_marginTop="40dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Farming Machine Power"
+        android:textSize="15dp"
+        android:textColor="@color/yellow_2"
+        android:layout_marginLeft="20dp"></TextView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="20dp"
+
+        android:id="@+id/recyclerviewjcb"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="top"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/addjcbtype">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+
+        android:layout_marginTop="190dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Days"
+            android:textColor="#0A0A0A">
+            >
+
+        </TextView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="150dp"
+            android:inputType="number"
+            android:hint="Enter Days"
+            android:textSize="15sp" />
+        <TextView
+            android:textSize="15dp"
+            android:textColor="@color/yellow_2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Addons Machine"></TextView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="100dp"
+
+            android:id="@+id/recyclerviewaddonsejcb"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="top"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/jcbaddonselist">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <Button
+            android:clickable="true"
+            android:id="@+id/Continue"
+            android:onClick="JcbContinue"
+            android:background="@color/yellow_2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="280dp"
+            android:layout_marginLeft="170dp"
+            android:text="to continue">
+
+        </Button>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+

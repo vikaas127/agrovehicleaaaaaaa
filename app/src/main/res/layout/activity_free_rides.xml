@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_free_rides_actiivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="6"
+    tools:context="com.jaats.agrovehicle.activity.FreeRidesActiivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+       android:background="@drawable/coupon_bg"
+        android:layout_height="match_parent"
+        android:layout_weight="4.3"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_message"
+            />
+
+        <com.jaats.agrovehicle.widgets.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="@string/label_share_your_invite_code"
+            android:textSize="10sp"/>
+
+        <com.jaats.agrovehicle.widgets.CustomTextView
+            android:id="@+id/txt_promo_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"/>
+
+        <com.jaats.agrovehicle.widgets.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/label_give_friends_free_ride_credit_to_try_la_taxi_you_ll_get_50_off_each_off_your_next_2_rides_when_they_start_riding"
+            android:textSize="13sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:src="@drawable/ic_rectangle"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_click_green_dark_rectangle_with_semicircle_edge"
+            android:gravity="center"
+            android:minHeight="40dp"
+            android:text="Invite Other"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <com.jaats.agrovehicle.widgets.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.5"
+        android:text="@string/label_details"
+        android:textColor="@color/colorPrimary"/>
+
+</LinearLayout>

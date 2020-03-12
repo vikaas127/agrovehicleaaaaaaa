@@ -1,0 +1,115 @@
+{
+  "project_info": {
+    "project_number": "876282288292",
+    "firebase_url": "https://agro-vehicle.firebaseio.com",
+    "project_id": "agro-vehicle",
+    "storage_bucket": "agro-vehicle.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:876282288292:android:51b539515470af17806e31",
+        "android_client_info": {
+          "package_name": "com.jaats.agrovehicle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "876282288292-91dkmvfn6rjn5lfqm8lcrt8c1eqjkk9q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jaats.agrovehicle",
+            "certificate_hash": "bb96b7ec15aabbe2934228ed027c5411d248c3ed"
+          }
+        },
+        {
+          "client_id": "876282288292-lv94br4dnbgrencg9re9tiqghkrht74c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jaats.agrovehicle",
+            "certificate_hash": "1e3117132ab146f7019fa83719d533202140e91d"
+          }
+        },
+        {
+          "client_id": "876282288292-np9pq0lqk0gabgot7dqakkuc2ci9nqfa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jaats.agrovehicle",
+            "certificate_hash": "4b9b7da6cc72c376d2e15bd04f2fc7fe5b88635a"
+          }
+        },
+        {
+          "client_id": "876282288292-h8of53jd1kn5lpio23h8mnh0stlddr5t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDU2i2j6Kk3l4q_kVI-8x5zuJYIjkZXMsE"
+        },
+        {
+          "current_key": "AIzaSyB8JoPWZ9nJbmmWCXFnNt6HoRfgqdnCTvE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "876282288292-h8of53jd1kn5lpio23h8mnh0stlddr5t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:876282288292:android:ae79185e59a2612d806e31",
+        "android_client_info": {
+          "package_name": "com.jaats.agrovehicledriver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "876282288292-lbur1io14imrgplukdddu139kpr22ge2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jaats.agrovehicledriver",
+            "certificate_hash": "bb96b7ec15aabbe2934228ed027c5411d248c3ed"
+          }
+        },
+        {
+          "client_id": "876282288292-1kpl8gs137lqchp7alqfdban9rl8stm0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jaats.agrovehicledriver",
+            "certificate_hash": "4b9b7da6cc72c376d2e15bd04f2fc7fe5b88635a"
+          }
+        },
+        {
+          "client_id": "876282288292-h8of53jd1kn5lpio23h8mnh0stlddr5t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDU2i2j6Kk3l4q_kVI-8x5zuJYIjkZXMsE"
+        },
+        {
+          "current_key": "AIzaSyB8JoPWZ9nJbmmWCXFnNt6HoRfgqdnCTvE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "876282288292-h8of53jd1kn5lpio23h8mnh0stlddr5t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
